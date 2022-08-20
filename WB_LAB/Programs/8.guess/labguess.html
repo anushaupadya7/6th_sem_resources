@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Square Number</title>
+</head>
+<body>
+   <script>
+       var n = prompt("Pic a number :");
+       var num = parseInt(n);
+       var g,guess;
+
+       var square = num*num;
+       for(var i=1;i<=5;i++){
+           g = prompt(`What is the square of ${num}`);
+           guess = parseInt(g);
+
+           if(guess==square){
+               alert("correct");
+               break;
+           }else{
+               alert(`Attempt ${i} is wrong`);
+           }
+       }
+   </script> 
+</body>
+</html>

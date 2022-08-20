@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function validate()
+            {
+            var msg="";
+            
+            if(document.getElementById('log').value=="")
+            {
+            msg = "username";
+            }if(document.getElementById('pass').value=="")
+            {
+            if(msg!="")
+            {
+            msg+=" and "
+            }
+            msg+="password";
+            }
+            if(msg!="")
+            {
+            alert("provide "+msg);
+            return false;
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="login.php" method="post" onsubmit="return validate();" >
+            Login-Name: <input type="text" id="log"></br></br>
+            Pass-word: <input type="password" id="pass"></br></br>
+            <input type="submit" name="submit1" value="Login">
+        </form>
+    </body>
+</html>

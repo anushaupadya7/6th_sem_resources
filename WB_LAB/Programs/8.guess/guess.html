@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>5Chances</title>
+</head>
+<body>
+<script>
+var number=prompt("Pick a number ");
+var num=parseInt(number);
+var square,third,guess;
+square=num*num;
+for(var i=1;i<=5;i++)
+{
+third=prompt("What is "+num+" square ");
+guess=parseInt(third);
+if(guess==square)
+{
+ 
+alert("correct");
+break;
+}
+else
+{
+alert("Attempt "+i+"is wrong");
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double click</title>
+    <style>
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p ondblclick="myfunc()">Double click the paragraph to trigger the function!!</p>
+    <p id="demo"></p>
+    <script>
+        function myfunc(){
+            let txt = document.getElementById('demo').innerHTML;
+            if(txt=='')
+                document.getElementById('demo').innerHTML="Hello from Anusha";
+            else{
+                document.getElementById('demo').innerHTML="";
+            }
+        }
+    </script>
+</body>
+</html>

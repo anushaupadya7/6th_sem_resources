@@ -1,0 +1,11 @@
+table,th,td{
+font-family: 'Times New Roman', Times, serif;
+align-content: center;
+text-align: center;
+}
+th{
+background: gray;
+}
+.bd{
+background: grey;
+}

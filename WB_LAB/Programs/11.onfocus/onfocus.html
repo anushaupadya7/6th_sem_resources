@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>on-focus</title>
+</head>
+<body>
+    Enter your Name: <input type="text" onfocus="focusFunc1(this)" onfocusout="focusFunc2(this)">
+    <p>When the input filed gets focus, a function is triggered which changes the background color</p>
+    <script>
+        function focusFunc1(x){
+            document.body.style.background='yellow';
+        }
+
+        function focusFunc2(x){
+            document.body.style.background='green';
+        }
+    </script>
+</body>
+</html>

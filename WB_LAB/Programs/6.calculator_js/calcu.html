@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="calcu.css"/>
+</head>
+<body >
+<center>
+<fieldset style="margin:200px;">
+<legend>Calculator</legend>
+<table>
+<tr>
+<th>Enter 1st number</th>
+</tr>
+<tr>
+<td><input type="number" name="num1" id="num1"/></td>
+</tr>
+<tr>
+<th>Enter 2nd number</th>
+</tr>
+<tr>
+<td><input type="number" name="num2" id="num2"/></td>
+</tr>
+ 
+<br>
+<tr >
+<td>
+<input type="button" value="+" onclick="performop(this.value)"/>
+<input type="button" value="-" onclick="performop(this.value)"/>
+<input type="button" value="*" onclick="performop(this.value)"/>
+<input type="button" value="/" onclick="performop(this.value)"/>
+</td>
+</tr>
+<tr>
+<th>Result</th>
+<tr>
+<td><input type="text" name="res" id="res" readonly/></td>
+</tr>
+</tr>
+<script src="calcu.js"></script>
+</table>
+</center>
+</body>
+</html>

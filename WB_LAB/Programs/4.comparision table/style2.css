@@ -1,0 +1,8 @@
+/* CSS Code */
+table,th,td{
+            font-family: 'Times New Roman', Times, serif;
+            align-content: center;
+            text-align: center;
+            table-layout: auto;
+            background-color: bisque;
+            width: 60%}
